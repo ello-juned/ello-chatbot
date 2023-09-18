@@ -4,24 +4,24 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="h-screen w-screen flex flex-col bg-violet-500">
-      <div className="h-1/10 m-2 bg-blue-200 shadow-xl border-b-2 border-gray-300 rounded-b-2xl">
+    <div className="h-screen w-screen flex flex-col bg-primaryColor">
+      <div className="h-1/10 m-2 bg-black shadow-xl  rounded-xl">
         <Header />
       </div>
 
-      <div className="h-9/10 flex flex-row justify-between items-center bg-blue-200  border-2 border-gray-300 shadow-2xl m-2 rounded-xl   p-5 h-full">
+      <div className="h-9/10 flex flex-row justify-between items-center bg-white  shadow-2xl m-2 rounded-xl   p-5 h-full">
         <div className="rounded-full w-full  h-full flex flex-col justify-center items-center cursor-pointer">
           <img
-            src="https://cdn.dribbble.com/users/77598/screenshots/16399264/media/d86ceb1ad552398787fb76f343080aa6.gif"
+            src="https://img.freepik.com/free-vector/cute-artificial-intelligence-robot-isometric-icon_1284-63045.jpg?size=626&ext=jpg"
             alt="emoji"
-            className="rounded-full object-cover w-[600px] h-[600px] shadow-2xl border-2 border-gray-200 "
+            className="rounded-full object-cover w-[600px] h-[600px]  "
           />
         </div>
         <div className=" w-full  h-full flex flex-col gap-5 ">
-          <h2 className=" bg-violet-500 text-white  mt-8 p-4 rounded-xl shadow-2xl text-2xl border-2 text-center ">
+          <h2 className=" bg-primaryColor text-white  mt-8 p-4 rounded-xl shadow-2xl text-2xl border-2 text-center ">
             Welcome to ello-chatbot 😊
           </h2>
-          <p className=" bg-violet-500 text-white  mt-8 p-4 rounded-xl shadow-2xl text-xl border-2 text-center ">
+          <p className=" bg-primaryColor text-white  mt-8 p-4 rounded-xl shadow-2xl text-xl border-2 text-center ">
             "Ello Bot" is an advanced conversational AI chatbot built using the
             Botpress framework. This intelligent virtual assistant is designed
             to provide seamless and interactive communication with users across
