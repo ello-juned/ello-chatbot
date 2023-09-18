@@ -1,29 +1,36 @@
 import React from "react";
-import ChatBot from "./ChatBot";
-import bg from "../src/assets/bg.jpeg";
+import ChatBot from "./components/ChatBot";
+import Header from "./components/Header";
 
 function App() {
-  const divStyle = {
-    backgroundImage: `url(${bg})`,
-    backgroundSize: "cover", // You can adjust this to 'contain' or other values as needed
-    backgroundPosition: "center center",
-  };
-
   return (
-    <div
-      className={`h-screen w-screen flex flex-col justify-center items-center`}
-      style={divStyle}
-    >
-      <section className="w-8/12 border-2 p-10 rounded-3xl shadow-2xl bg-white opacity-90">
-        <p className="text-2xl">
-          Ellocent Labs IT Solutions Pvt. Ltd. successfully marked its presence
-          in the prominent IT development business world by delivering
-          innovative solutions via implementing the SOLID coding principles.
-        </p>
+    <div className="h-screen w-screen flex flex-col bg-violet-500">
+      <div className="h-1/10 m-2 bg-blue-200 shadow-xl border-b-2 border-gray-300 rounded-b-2xl">
+        <Header />
+      </div>
 
-        {/* ChatBot... */}
-        <ChatBot />
-      </section>
+      <div className="h-9/10 flex flex-row justify-between items-center bg-blue-200  border-2 border-gray-300 shadow-2xl m-2 rounded-xl   p-5 h-full">
+        <div className="rounded-full w-full  h-full flex flex-col justify-center items-center cursor-pointer">
+          <img
+            src="https://cdn.dribbble.com/users/77598/screenshots/16399264/media/d86ceb1ad552398787fb76f343080aa6.gif"
+            alt="emoji"
+            className="rounded-full object-cover w-[600px] h-[600px] shadow-2xl border-2 border-gray-200 "
+          />
+        </div>
+        <div className=" w-full  h-full flex flex-col gap-5 ">
+          <h2 className=" bg-violet-500 text-white  mt-8 p-4 rounded-xl shadow-2xl text-2xl border-2 text-center ">
+            Welcome to ello-chatbot 😊
+          </h2>
+          <p className=" bg-violet-500 text-white  mt-8 p-4 rounded-xl shadow-2xl text-xl border-2 text-center ">
+            "Ello Bot" is an advanced conversational AI chatbot built using the
+            Botpress framework. This intelligent virtual assistant is designed
+            to provide seamless and interactive communication with users across
+            various platforms and applications.
+          </p>
+        </div>
+      </div>
+
+      <ChatBot />
     </div>
   );
 }
