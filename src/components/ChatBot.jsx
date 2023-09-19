@@ -17,6 +17,13 @@ const Chatbot = () => {
     };
   }, []);
 
+  useEffect(() => {
+    setTimeout(() => {
+      const btn = document.getElementsByClassName("bpw-widget-btn");
+      console.log("btn", btn);
+    }, 1000);
+  }, []);
+
   return <div id="webchat" style={{ display: "none" }} />;
 };
 

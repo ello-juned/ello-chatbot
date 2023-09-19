@@ -9,12 +9,12 @@ function App() {
         <Header />
       </div>
 
-      <div className="h-9/10 flex flex-row justify-between items-center bg-white  shadow-2xl m-2 rounded-xl   p-5 h-full">
+      <div className="h-9/10 flex flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row justify-between items-center bg-white  shadow-2xl m-2 rounded-xl   p-5 h-full">
         <div className="rounded-full w-full  h-full flex flex-col justify-center items-center cursor-pointer">
           <img
             src="https://img.freepik.com/free-vector/cute-artificial-intelligence-robot-isometric-icon_1284-63045.jpg?size=626&ext=jpg"
             alt="emoji"
-            className="rounded-full object-cover w-[600px] h-[600px]  "
+            className="rounded-full object-cover  sm:w-[300px] sm:h-[300px] md:w-[500px] md:h-[500px] lg:w-[500px] lg:h-[500px]    "
           />
         </div>
         <div className=" w-full  h-full flex flex-col gap-5 ">
